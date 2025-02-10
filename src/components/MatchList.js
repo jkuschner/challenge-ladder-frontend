@@ -29,7 +29,7 @@ function MatchList() {
     })
 
     return (
-        <div>
+        <div class="match-list">
             <h1>Matches</h1>
             <table>
             <thead>
