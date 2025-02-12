@@ -1,14 +1,17 @@
-import logo from '../resources/logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import PlayerList from './PlayerList';
 import MatchList from './MatchList';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <PlayerList/>
-      <MatchList/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/players" element={<PlayerList/>}/>
+        <Route path="/matches" element={<MatchList/>}/>
+      </Routes>
+    </Router>
   );
 }
 
